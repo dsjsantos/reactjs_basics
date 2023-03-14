@@ -30,11 +30,22 @@
 }
 
 .row {
-  display: flex;
   padding: 0.4em 1em;
+}
+
+.flex {
+  display: flex;
   align-items: center;
+}
+
+.mt-1 {
+  margin-top: 1em;
 }
 
 .item-label {
   margin-right: 0.25em;
+}
+
+.btn-reset {
+  padding: 0.3em 0.6em;
 }

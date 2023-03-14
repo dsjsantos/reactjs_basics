@@ -20,6 +20,12 @@ class CounterComponent extends Component {
         this.setState({ count: this.state.count+1 });
     }
 
+    componentDidUpdate(prevProps) {
+        if(prevProps.resetTrigger!==this.props.resetTrigger || prevProps.initial!==this.props.initial) {
+            this.setState({ count: this.props.initial ? this.props.initial : 0 });
+        }
+    }
+
     render() {
         const { increase, decrease } = this.props.disableButton || {};
         return (

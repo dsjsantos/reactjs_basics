@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import './counter.css';
 
@@ -14,6 +14,10 @@ const CounterFunction = props => {
     const _handleCounterIncrease = () => {
         setCount(count+1);
     }
+
+    useEffect(() => {
+        setCount(props.initial ? props.initial : 0);
+    }, [props.resetTrigger, props.initial]);
 
     return (
         <div className="counter-wrapper">
