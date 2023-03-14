@@ -7,7 +7,7 @@ const AppHeader = (props) => {
     return(
         <header className="my-app-header">
             <img src={logo} className="header-logo" alt="logo" />
-            <h1>Hello from React Js!</h1>
+            <h1>{props.title}</h1>
         </header>
 
     )

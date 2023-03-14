@@ -28,3 +28,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+.row {
+  display: flex;
+  padding: 0.4em 1em;
+  align-items: center;
+}
+
+.item-label {
+  margin-right: 0.25em;
+}

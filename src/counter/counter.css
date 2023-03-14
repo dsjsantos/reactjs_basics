@@ -1,0 +1,46 @@
+.counter-wrapper {
+    display: inline-block;
+}
+
+.counter-box {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.2em;
+    border: 1px solid black;
+}
+
+.counter-box .counter-value {
+    min-width: 30px;
+    background-color: antiquewhite;
+    padding: 0.1em 0.2em;
+}
+
+.counter-box .counter-action {
+    display: inline;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-left: 0.3em;
+    background-color: crimson;
+    color: white;
+}
+
+.counter-box .counter-action:not(:disabled) {
+    cursor: pointer;
+}
+
+.counter-box .counter-action:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.counter-box .counter-action span {
+    font-size: inherit;
+}
