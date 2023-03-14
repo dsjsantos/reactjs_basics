@@ -1,14 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+
+import AppHeader from '../appHeader/appHeader';
 
 function App() {
   return (
     <div className="my-app">
-      <header className="my-app-header">
-        <img src={logo} className="header-logo" alt="logo" />
-        <h1>Hello from React Js!</h1>
-      </header>
-
+      <AppHeader />
 
 
     </div>

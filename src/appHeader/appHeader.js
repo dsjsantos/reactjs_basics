@@ -1,0 +1,16 @@
+import React from "react";
+
+import logo from './logo.svg';
+
+
+const AppHeader = (props) => {
+    return(
+        <header className="my-app-header">
+            <img src={logo} className="header-logo" alt="logo" />
+            <h1>Hello from React Js!</h1>
+        </header>
+
+    )
+}
+
+export default AppHeader;
