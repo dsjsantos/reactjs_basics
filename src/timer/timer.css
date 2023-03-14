@@ -1,0 +1,17 @@
+.timer-wrapper {
+    display: inline-block;
+}
+
+.timer-wrapper {
+    color: green;
+}
+
+.timer-wrapper .timer-content {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.timer-wrapper .timer-content .miliseconds {
+    font-size: 0.9em;
+    font-weight: normal;
+}
