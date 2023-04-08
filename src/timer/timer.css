@@ -2,8 +2,12 @@
     display: inline-block;
 }
 
-.timer-wrapper {
+.timer-wrapper:not(.red) {
     color: green;
+}
+
+.timer-wrapper.red {
+    color: red;
 }
 
 .timer-wrapper .timer-content {
@@ -15,3 +19,4 @@
     font-size: 0.9em;
     font-weight: normal;
 }
+

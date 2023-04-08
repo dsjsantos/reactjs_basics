@@ -4,6 +4,7 @@ import './App.css';
 
 import AppHeader from '../appHeader/appHeader';
 import Timer from '../timer/timer';
+import TimerFunction from '../timer/timerFunction';
 import { CounterClass, CounterFunction } from '../counter';
 
 
@@ -64,10 +65,11 @@ function App() {
       </div>
 
       { showTimer &&
-      <div className="row"><Timer timerMs={timerInitial}/></div>
+      <>
+        <div className="row"><Timer timerMs={timerInitial}/></div>
+        <div className="row"><TimerFunction timerMs={timerInitial}/></div>
+      </>
       }
-
-
 
     </div>
   );
