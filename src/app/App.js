@@ -3,9 +3,10 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 import AppHeader from '../appHeader/appHeader';
+import { CounterClass, CounterFunction } from '../counter';
 import Timer from '../timer/timer';
 import TimerFunction from '../timer/timerFunction';
-import { CounterClass, CounterFunction } from '../counter';
+import TodoList from '../todoList/todoList';
 
 
 function App() {
@@ -70,6 +71,11 @@ function App() {
         <div className="row"><TimerFunction timerMs={timerInitial}/></div>
       </>
       }
+
+      <div className="row">
+        <h3>To do list</h3>
+        <TodoList />
+      </div>
 
     </div>
   );

@@ -1,0 +1,11 @@
+.todoListMain .btn-add, .todoListMain .todo-item-wrapper .btn-remove {
+    margin-left: 0.25em;
+}
+
+.todoListMain ul, .todoListMain ol {
+    padding-inline-start: 20px;
+}
+
+.todoListMain .list-actions button:not(:first-of-type) {
+    margin-left: 0.5em;    
+}

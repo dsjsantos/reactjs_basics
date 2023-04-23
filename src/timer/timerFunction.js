@@ -10,7 +10,6 @@ const TimerFunction = (props) => {
     const startTime = useMemo(() => new Date().getTime(), []);
 
     const _cleanUp = () => {
-console.log("Clean up");
         if(timeoutUpdate) {
             clearInterval(timeoutUpdate);
         }
