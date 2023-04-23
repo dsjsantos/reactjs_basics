@@ -55,3 +55,17 @@
 .btn-reset {
   padding: 0.3em 0.6em;
 }
+
+.__react-custom-date-field__ input {
+  width: 92px;
+}
+
+.field-row-invalid-feedback {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.field-row-invalid-feedback .input-wrapper.invalid input {
+  color: red;
+}
