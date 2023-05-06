@@ -24,6 +24,9 @@ function DemoTimers() {
 
     return (
         <div className="demo-timer-wrapper">
+            <div className="row">
+                <h3>Timers</h3>
+            </div>
             <div className="row mt-1">
                 <button className="btn-reset" onClick={() => setShowTimer(!showTimer)}>Toggle Timer</button>
                 <input className="timer-input" type="text" name="timerMs" value={timerMs} onChange={_handleTimerChange}/>ms

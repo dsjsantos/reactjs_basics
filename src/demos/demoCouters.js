@@ -8,24 +8,27 @@ function DemoCouters() {
 
   return (
     <div className="demo-counters-wrapper">
-        <div className="app-counters">
+        <div className="row">
+            <h3>Counters</h3>
+        </div>
+        <div className="counters">
             <div className="flex">
-            <div className="row flex">
-                <label className="item-label">Class Counter 1:</label>
-                <CounterClass resetTrigger={resets} />
-            </div>
-            <div className="row flex">
-                <label className="item-label">Class Counter 2:</label>
-                <CounterClass resetTrigger={resets} initial={3} disableButton={{ increase: false, decrease: true }} />
-            </div>
-            <div className="row flex">
-                <label className="item-label">Function Counter 1:</label>
-                <CounterFunction resetTrigger={resets} initial={5} disableButton={{ increase: true }} />
-            </div>
-            <div className="row flex">
-                <label className="item-label">Function Counter 2:</label>
-                <CounterFunction resetTrigger={resets} initial={7} />
-            </div>
+                <div className="row flex">
+                    <label className="item-label">Class Counter 1:</label>
+                    <CounterClass resetTrigger={resets} />
+                </div>
+                <div className="row flex">
+                    <label className="item-label">Class Counter 2:</label>
+                    <CounterClass resetTrigger={resets} initial={3} disableButton={{ increase: false, decrease: true }} />
+                </div>
+                <div className="row flex">
+                    <label className="item-label">Function Counter 1:</label>
+                    <CounterFunction resetTrigger={resets} initial={5} disableButton={{ increase: true }} />
+                </div>
+                <div className="row flex">
+                    <label className="item-label">Function Counter 2:</label>
+                    <CounterFunction resetTrigger={resets} initial={7} />
+                </div>
             </div>
         </div>
 

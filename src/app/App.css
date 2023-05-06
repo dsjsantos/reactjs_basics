@@ -69,3 +69,8 @@
 .field-row-invalid-feedback .input-wrapper.invalid input {
   color: red;
 }
+
+section.contet {
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
